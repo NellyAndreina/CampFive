@@ -37,7 +37,6 @@ After(async function (scenario) {
          console.error("Fallo al tomar screenshot:", error);
      }
   }
-
   await this.page.close();
   await this.context.close();
 });
