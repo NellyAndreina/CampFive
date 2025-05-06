@@ -6,5 +6,4 @@ class CustomWorld extends World {
     super(options);
   }
 }
-
 setWorldConstructor(CustomWorld);
