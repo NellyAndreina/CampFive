@@ -16,9 +16,7 @@ Before(async function (scenario) { // 'this' es CustomWorld
   this.context = await browser.newContext({
   });
   this.page = await this.context.newPage();
-
   this.loginPage = new LoginPage(this.page);
-
   console.log(`\nEjecutando escenario: ${scenario.pickle.name}`);
 });
 
