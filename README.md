@@ -2,7 +2,6 @@
 # Campamento Cinco de Automatización
 
 # Desafío de Automatización con BDD
-
 Proyecto de automatización que combina pruebas funcionales y de performance utilizando BDD (Behavior Driven Development).
 
 ## Tecnologías Utilizadas
@@ -20,7 +19,6 @@ Proyecto de automatización que combina pruebas funcionales y de performance uti
 git clone https://github.com/NellyAndreina/CampFive.git
 cd CampFive
 npm install
-
 ```
 
 ## Estructura del Proyecto
@@ -55,7 +53,6 @@ npm run test:functional
 
 # Pruebas de performance
 npm run test:performance
-
 ```
 
 ## Convenciones
