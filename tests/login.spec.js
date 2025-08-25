@@ -6,7 +6,9 @@ test('Login en IMDb', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
     await loginPage.gotoHome();
+    await loginPage.clickSigin();
+    await loginPage.clickOnIMDb();
     await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
 
-//  await expect(page.getByText(/Cuenta|Account/i)).toBeVisible();
+await expect(page.getByText(/Cuenta|Account/i)).toBeVisible();
 });
