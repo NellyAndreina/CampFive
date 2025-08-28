@@ -9,6 +9,7 @@ test('Login en IMDb', async ({ page }) => {
     await loginPage.clickSigin();
     await loginPage.clickOnIMDb();
     await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
+    await loginPage.goToPasswordAssistance();
 
 await expect(page.getByText(/Cuenta|Account/i)).toBeVisible();
 });
