@@ -9,6 +9,7 @@ test('Login IMDb y credenciales externas', async ({ page }) => {
   await loginPage.gotoHome();
   await loginPage.signInWithImdbLink();
   await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
+  
 
   // Verify that you are logged in
   await expect(page.getByText(/Cuenta|Account/i)).toBeVisible();
