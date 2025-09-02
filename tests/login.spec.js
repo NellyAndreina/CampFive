@@ -2,7 +2,8 @@ const { test, expect } = require('@playwright/test');
 import { LoginPage } from '../src/page_objects/loginPage';
 require('dotenv').config(); 
 
-test('Login in IMDb', async ({ page, browser }) => {
+test('Login en IMDb', async ({ page }) => {
+
   const loginPage = new LoginPage(page);
 
     await loginPage.gotoHome();
@@ -11,4 +12,5 @@ test('Login in IMDb', async ({ page, browser }) => {
     await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
     
     await expect(loginPage.signInButton).not.toBeVisible();
+  
 });

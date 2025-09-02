@@ -14,9 +14,10 @@ class LoginPage {
     await this.page.goto('https://www.imdb.com/es/?ref_=nv_home');
   }
 
-  async clickSigin() {
-    await this.signInButton.waitFor({ state: 'visible' });
-    await this.signInButton.click();
+  async clickSigin(){
+     await this.signInButton.waitFor({ state: 'visible' });
+     await this.signInButton.click();
+
   }
 
   async clickOnIMDb() {
