@@ -10,6 +10,5 @@ test('Login in IMDb', async ({ page, browser }) => {
     await loginPage.clickOnIMDb();
     await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
     
-await expect(loginPage.signInButton).not.toBeVisible();
-//await browser.close();
+    await expect(loginPage.signInButton).not.toBeVisible();
 });

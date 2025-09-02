@@ -4,6 +4,7 @@ class MovieSearchPage {
     this.searchBox = page.locator('#suggestion-search');
     this.searchButton = page.locator('#suggestion-search-button');
     this.firstSuggestion = page.locator('.react-autosuggest__suggestion a').first();
+    this.headingSearchName = page.getByRole('heading', { name: /Lilo/i })
   }
 
   async gotoHome() {
