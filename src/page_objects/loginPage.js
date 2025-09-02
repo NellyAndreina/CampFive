@@ -17,6 +17,7 @@ class LoginPage {
   async clickSigin(){
      await this.signInButton.waitFor({ state: 'visible' });
      await this.signInButton.click();
+
   }
 
   async clickOnIMDb() {
@@ -37,4 +38,5 @@ class LoginPage {
     await this.passwordAssistanceLink.click();
   }
 }
+
 module.exports = { LoginPage };
